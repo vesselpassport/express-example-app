@@ -5,6 +5,7 @@
 
 # Logs and errors.
 **/logs/
+**/temp.log
 **/log
 **/npm-debug.log*
 **/yarn-debug.log*

@@ -4,6 +4,7 @@ import { Vessel } from 'vessel-node';
 export const vessel = new Vessel();
 vessel.addPermittedScope('localhost');
 
+// Sets necessary Vessel headers
 export const addVesselHeadersMiddleware = (
   _: Request,
   res: Response,

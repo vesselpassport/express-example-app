@@ -1,18 +1,13 @@
 import React, { FC } from 'react';
-import { User } from 'types/user';
 
-interface VesselUserProps {
-  user: User;
-}
-
-export const VesselUser: FC<VesselUserProps> = ({ user }) => (
-  <div>
-    <p>Your logged in:</p>
-    <ul>
-      <li>{`User ID: ${user.id}`}</li>
-      {user.name && <li>{`Name: ${user.name}`}</li>}
-      {user.email && <li>{`Email: ${user.email}`}</li>}
-      {user.phoneNumber && <li>{`Phone number: ${user.phoneNumber}`}</li>}
-    </ul>
-  </div>
+export const InstallVessel: FC = () => (
+  <>
+    <p>
+      {`Vessel was not detected. Check it out `}
+      <a href="https://vessel.xyz">here</a>
+      {` and install it on the `}
+      <a href="https://chrome.google.com/webstore/detail/vessel/efabpnahpkdbpejgekahfnecclbepmee">Google Chrome store</a>
+      {`.`}
+    </p>
+  </>
 );

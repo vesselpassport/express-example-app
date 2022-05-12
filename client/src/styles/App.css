@@ -1,0 +1,57 @@
+.root {
+  background-color: #ecfaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  padding: 20px;
+}
+
+.content-container {
+  max-width: 800px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+.circular-progress-span {
+  animation: rotate 1.4s linear infinite;
+  color: var(--aqua);
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.circular-progress-svg {
+  display: block;
+}
+
+.circular-progress-circle {
+  animation: dash 1.4s ease-in-out infinite;
+  stroke: currentColor;
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0;
+}

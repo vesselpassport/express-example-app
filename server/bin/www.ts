@@ -1,10 +1,7 @@
-import 'dotenv/config';
 import http from 'http';
 import app from 'app';
 
-const { PORT } = process.env;
-
-app.set('port', parseInt(PORT, 10));
+app.set('port', 5010);
 
 const server = http.createServer(app);
 
