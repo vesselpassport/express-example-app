@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*",
+    "bin/**/*",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "files": true
+  }
+}
