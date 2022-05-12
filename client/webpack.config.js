@@ -41,7 +41,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: resolve(__dirname, 'public/index.html'),
-      favicon: resolve(__dirname, 'public/favicon.png'),
+      favicon: resolve(__dirname, 'public/favicon.ico'),
     }),
     ...(dev ? [new ReactRefreshPlugin()] : []),
   ],
