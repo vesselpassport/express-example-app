@@ -7,7 +7,7 @@ interface VesselUserProps {
 
 export const VesselUser: FC<VesselUserProps> = ({ user }) => (
   <div>
-    <p>Your logged in:</p>
+    <p>You're logged in:</p>
     <ul>
       <li>{`User ID: ${user.id}`}</li>
       {user.name && <li>{`Name: ${user.name}`}</li>}
